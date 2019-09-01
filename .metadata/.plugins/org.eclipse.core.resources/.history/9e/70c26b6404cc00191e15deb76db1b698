@@ -1,0 +1,5 @@
+package com.deepak.restws.model;
+
+public class PatientBusinessExceptionMapper implements ExceptionMapper<PatientBusinessException> {
+
+}

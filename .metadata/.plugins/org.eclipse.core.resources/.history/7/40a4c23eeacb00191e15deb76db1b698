@@ -1,0 +1,13 @@
+package com.deepak.restws.model;
+
+import java.util.List;
+
+import javax.ws.rs.Path;
+
+@Path("/patientService")
+public interface PatientService {
+
+	
+	public List<Patient> getPatients();
+	
+}

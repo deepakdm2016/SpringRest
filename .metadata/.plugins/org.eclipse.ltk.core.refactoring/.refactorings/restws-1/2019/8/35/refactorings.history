@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.deepak.restws&apos; to &apos;restws/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;restws-1&apos;&#x0D;&#x0A;- Destination element: &apos;restws/src/main/java&apos;&#x0D;&#x0A;- Original element: &apos;restws-1/src/main/java/com.deepak.restws&apos;" description="Copy package" destination="=restws/src\/main\/java" element1="/src\/main\/java&lt;com.deepak.restws" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1567254869390" version="1.0"/>
+</session>

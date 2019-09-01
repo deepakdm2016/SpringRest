@@ -1,0 +1,19 @@
+package com.deepak.passengerService;
+
+import java.util.List;
+
+public class PassengerServiceImple implements PassengerService {
+
+	@Override
+	public List<Passenger> getPassengers() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Passenger getPassenger() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

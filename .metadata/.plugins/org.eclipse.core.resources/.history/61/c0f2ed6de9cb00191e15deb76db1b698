@@ -1,0 +1,14 @@
+package com.deepak.restws.model;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class PatientServiceImpl implements PatientService {
+	
+	Map<Long,Patient> patients=new HashMap<>();
+	
+
+}

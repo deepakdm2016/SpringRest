@@ -1,0 +1,9 @@
+package com.deepak.passengerService;
+
+import java.util.List;
+
+public interface PassengerService {
+	
+	List<Passenger> getPassengers();
+
+}

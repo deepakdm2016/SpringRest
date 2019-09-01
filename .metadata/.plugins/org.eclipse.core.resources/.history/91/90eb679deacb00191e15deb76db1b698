@@ -1,0 +1,36 @@
+package com.deepak.restws.model;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class PatientServiceImpl implements PatientService {
+	
+	Map<Long,Patient> patients=new HashMap<>();
+	long currentId=123;
+
+	public PatientServiceImpl() {
+		init();
+	}
+
+	 void init() {
+
+		 Patient p1=new Patient();
+		 p1.setId(currentId);
+		 p1.setName("John");
+		 patients.put(p1.getId(), p1);
+	}
+
+	@Override
+	public List<Patient> getPatients() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+	
+
+}

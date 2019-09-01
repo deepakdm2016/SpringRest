@@ -1,0 +1,21 @@
+package com.deepak.passengerService;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class PassengerServiceImple implements PassengerService {
+
+	List<Passenger> passengers=new ArrayList<>();
+
+	@Override
+	public List<Passenger> getPassengers() {
+		
+		return null;
+	}
+
+	@Override
+	public Passenger getPassenger() {
+		return null;
+	}
+
+}

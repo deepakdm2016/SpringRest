@@ -1,0 +1,62 @@
+package com.deepak.restws.model;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
+import javax.ws.rs.core.Response;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class PatientServiceImpl implements PatientService {
+	
+	Map<Long,Patient> patients=new HashMap<>();
+	long currentId=123;
+
+	public PatientServiceImpl() {
+		init();
+	}
+
+	 void init() {
+
+		 Patient p1=new Patient();
+		 p1.setId(currentId);
+		 p1.setName("John");
+		 patients.put(p1.getId(), p1);
+	}
+
+	@Override
+	public List<Patient> getPatients() {
+
+		Set<Entry<Long, Patient>> entrySet = patients.entrySet();
+		List<Patient> pts=new ArrayList<>();
+		for(Map.Entry m:entrySet)
+		{
+			pts.add((Patient) m.getValue());
+		}
+		return pts;
+	}
+
+	@Override
+	public Patient getPatient(long id) {
+		
+		return patients.get(id);
+		
+	}
+
+	@Override
+	public Response createPatient(Patient p) {
+
+		p.setId(currentId++);
+		patients.put(p.getId(), p)
+		return p;
+	}
+	
+	
+	
+
+}

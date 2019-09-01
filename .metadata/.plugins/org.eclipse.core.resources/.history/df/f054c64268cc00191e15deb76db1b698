@@ -1,0 +1,34 @@
+package com.deepak.passengerService;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class PassengerServiceImple implements PassengerService {
+
+	List<Passenger> passengers=new ArrayList<>();
+	int currentId=123;
+
+	@Override
+	public List<Passenger> getPassengers(int start, int size) {
+		System.out.println("Start: "+start);
+		System.out.println("Size: "+size);
+
+		return passengers;
+	}
+
+	@Override
+	public void addPassenger(String fn, String ln) {
+		
+		Passenger p=new Passenger();
+		p.setName(fn+ln);
+		p.setId(currentId++);
+		passengers.add(p);
+		System.out.println(fn+ln);
+	}
+
+
+}

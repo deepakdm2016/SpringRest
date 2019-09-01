@@ -1,0 +1,5 @@
+package com.deepak.passengerService;
+
+public interface PassengerService {
+
+}

@@ -1,0 +1,7 @@
+package com.deepak.restws.model;
+
+public class PatientServiceImpl implements PatientService {
+	
+	
+
+}
