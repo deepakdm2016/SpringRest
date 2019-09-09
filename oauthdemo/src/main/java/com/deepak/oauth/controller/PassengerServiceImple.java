@@ -25,7 +25,7 @@ public class PassengerServiceImple implements PassengerService {
 	}
 
 	@Override
-	public void addPassenger(String fn, String ln, String agent, HttpHeaders headers) {
+	public void addPassenger(String fn, String ln, String agent) {
 		
 		Passenger p=new Passenger();
 		p.setName(fn+ln);
@@ -34,24 +34,7 @@ public class PassengerServiceImple implements PassengerService {
 		System.out.println(fn+" "+ln);
 		System.out.println("Agent"+"::"+agent);
 
-		MultivaluedMap<String, String> rh = headers.getRequestHeaders();
-		for(Map.Entry m:rh.entrySet())
-		{
-			System.out.println("Key: "+m.getKey());
-			System.out.println("Value: "+m.getValue());
-
-		}
-		
-		
-		  Map<String, Cookie> cookies = headers.getCookies();
-		for(Map.Entry m:cookies.entrySet())
-		{
-			System.out.println("Cookie Key: "+m.getKey());
-			System.out.println("cookie Value: "+m.getValue());
-
-		}
-
-	}
+			}
 
 
 }

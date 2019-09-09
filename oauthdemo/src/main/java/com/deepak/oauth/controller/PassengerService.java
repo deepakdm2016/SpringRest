@@ -13,24 +13,20 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.HttpHeaders;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
 @Path("/passengerService")
 @Produces("application/xml,application/json")
 @Consumes("application/xml,application/x-www-form-urlencoded,application/json")
-@RestController
 
 public interface PassengerService {
 	
-	@RequestMapping("/passengers/{name}")
+	@Path("/passengers")
 	@GET
 	List<Passenger> getPassengers(@QueryParam("start") int start,@QueryParam("size")int size);
 	
-	@RequestMapping("/passengers")
+	@Path("/passengers")
 	@POST
 	void addPassenger(@FormParam("fn")String fn, @FormParam("ln")String ln, 
-			@HeaderParam("agent") String agent,@Context HttpHeaders headers);
+			@HeaderParam("agent") String agent);
 	
 
 }

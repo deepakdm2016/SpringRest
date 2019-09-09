@@ -1,3 +1,0 @@
-#cxf.jaxrs.component-scan=true
-cxf.jaxrs.classes-scan=true
-server.context-path=/restws

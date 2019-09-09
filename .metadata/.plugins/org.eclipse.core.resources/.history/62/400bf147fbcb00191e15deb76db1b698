@@ -1,6 +1,0 @@
-#cxf.jaxrs.component-scan=true
-#cxf.jaxrs.classes-scan=true
-#cxf.jaxrs.classes-scan-packages=org.codehaus.jackson.jaxrs,com.deepak.restws
-server.context-path=/restws
-cxf.jaxrs.classes-scan=true
-cxf.jaxrs.classes-scan-packages=org.codehaus.jackson.jaxrs,com.deepak.restws

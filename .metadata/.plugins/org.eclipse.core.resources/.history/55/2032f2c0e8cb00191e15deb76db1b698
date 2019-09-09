@@ -1,8 +1,0 @@
-package com.deepak.restws.model;
-
-import javax.ws.rs.path;
-
-@Path("/patientService")
-public interface PatientService {
-
-}
